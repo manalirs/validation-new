@@ -6,7 +6,7 @@ import Combine
  public struct validation_new {
    @Binding var pincode: String
         public init(pincode: String) {
-         getloc(pincode:pincode)
+         self.getloc(pincode:pincode)
              //self._pincode = pincode
           
          }

@@ -9,7 +9,7 @@ import Combine
         public init(pincode: String) {
      //   getloc(pincode:self.pincode)
   self.pincode1 = pincode
-         getlo()
+        getloc()
           
          }
     //  func Validation() -> String? {
@@ -65,15 +65,13 @@ import Combine
     //     if pincode.count > upper {
     //         pincode = String(pincode.prefix(upper))
     //     }
-    // }
-  func getlo(){
-   if pincode1 != ""
-   {
+  //}
+  
     
    
-     func getloc(pincode:String) {
+     func getloc() {
           var cityName = ""
-        let location: String = pincode
+        let location: String = pincode1
         let geocoder: CLGeocoder = CLGeocoder()
         geocoder.geocodeAddressString(location, completionHandler: {(placemarks: [CLPlacemark]?, error: Error?) -> Void in
             if ((placemarks?.count)! > 0) {
@@ -90,7 +88,7 @@ import Combine
         } )
     }
   }
-}}
+}
 
 
 

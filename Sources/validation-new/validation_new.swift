@@ -2,8 +2,8 @@ import SwiftUI
 import CoreData
 import CoreLocation
 import Combine
-public struct validation_new {
-    public private(set) var text = "Hello, World!"
+ struct validation_new {
+   
     //  func Validation() -> String? {
     //     if self.name.count == 0 {
     //         errormsg = "Enter Correct UserName"
@@ -59,7 +59,7 @@ public struct validation_new {
     //     }
     // }
      func getloc(pincode: String) {
-        @State  var cityName = ""
+          var cityName = ""
         let location: String = pincode
         let geocoder: CLGeocoder = CLGeocoder()
         geocoder.geocodeAddressString(location, completionHandler: {(placemarks: [CLPlacemark]?, error: Error?) -> Void in

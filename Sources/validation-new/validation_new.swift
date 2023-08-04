@@ -67,6 +67,10 @@ import Combine
     //     }
     // }
   func getlo(){
+   if pincode != ""
+   {
+    
+   
      func getloc(pincode:String) {
           var cityName = ""
         let location: String = pincode
@@ -86,7 +90,7 @@ import Combine
         } )
     }
   }
-}
+}}
 
 
 

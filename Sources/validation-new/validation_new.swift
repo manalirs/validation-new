@@ -8,7 +8,7 @@ import Combine
   @State  var pincode: String
         public init(pincode: String) {
         getloc(pincode:pincode)
- // self._pincode = pincode
+  self._pincode = pincode
           
          }
     //  func Validation() -> String? {

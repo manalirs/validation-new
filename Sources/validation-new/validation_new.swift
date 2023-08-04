@@ -64,7 +64,7 @@ import Combine
     //         pincode = String(pincode.prefix(upper))
     //     }
     // }
-     func getloc() {
+     func getloc(pincode:String) {
           var cityName = ""
         let location: String = pincode
         let geocoder: CLGeocoder = CLGeocoder()

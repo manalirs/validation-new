@@ -67,7 +67,7 @@ import Combine
     //     }
     // }
   func getlo(){
-   if pincode != ""
+   if pincode1 != ""
    {
     
    

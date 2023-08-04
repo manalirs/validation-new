@@ -7,7 +7,7 @@ import Combine
 //   @Binding var pincode: String
   var pincode1: String
         public init(pincode: String) {
-        getloc(pincode:pincode)
+        self.getloc(pincode:pincode)
   self.pincode1 = pincode
           
          }

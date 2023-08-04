@@ -6,7 +6,8 @@ import Combine
  public struct validation_new {
      @Binding var pincode: String
         public init(pincode: Binding<String>) {
-             self._pincode = pincode
+         getloc(pincode)
+             //self._pincode = pincode
           
          }
     //  func Validation() -> String? {
@@ -63,7 +64,7 @@ import Combine
     //         pincode = String(pincode.prefix(upper))
     //     }
     // }
-     func getloc(pincode: String) {
+     func getloc() {
           var cityName = ""
         let location: String = pincode
         let geocoder: CLGeocoder = CLGeocoder()

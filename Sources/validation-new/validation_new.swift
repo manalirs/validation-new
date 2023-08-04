@@ -2,6 +2,7 @@ import SwiftUI
 import CoreData
 import CoreLocation
 import Combine
+@available(iOS 14, macOS 11.0, *)
  public struct validation_new {
      @Binding var pincode: String
         public init(pincode: Binding<String>) {

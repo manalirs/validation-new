@@ -5,10 +5,10 @@ import Combine
 @available(iOS 14, macOS 11.0, *)
  public struct validation_new {
 //   @Binding var pincode: String
-  var pincode: String
+  var pincode1: String
         public init(pincode: String) {
         getloc(pincode:pincode)
-  self._pincode = pincode
+  self.pincode1 = pincode
           
          }
     //  func Validation() -> String? {

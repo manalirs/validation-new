@@ -4,7 +4,8 @@ import CoreLocation
 import Combine
 @available(iOS 14, macOS 11.0, *)
  public struct validation_new {
-   @Binding var pincode: String
+//   @Binding var pincode: String
+  @State  var pincode: String
         public init(pincode: String) {
          self.getloc(pincode:pincode)
  // self._pincode = pincode
@@ -64,9 +65,9 @@ import Combine
     //         pincode = String(pincode.prefix(upper))
     //     }
     // }
-     func getloc(pincode:Binding<String>) {
+     func getloc(pincode:String) {
           var cityName = ""
-        let location: Binding<String> = pincode
+        let location: String = pincode
         let geocoder: CLGeocoder = CLGeocoder()
         geocoder.geocodeAddressString(location, completionHandler: {(placemarks: [CLPlacemark]?, error: Error?) -> Void in
             if ((placemarks?.count)! > 0) {

@@ -7,8 +7,9 @@ import Combine
 //   @Binding var pincode: String
   var pincode1: String
         public init(pincode: String) {
-        getloc(pincode:self.pincode)
+     //   getloc(pincode:self.pincode)
   self.pincode1 = pincode
+         getlo()
           
          }
     //  func Validation() -> String? {
@@ -65,6 +66,7 @@ import Combine
     //         pincode = String(pincode.prefix(upper))
     //     }
     // }
+  func getlo(){
      func getloc(pincode:String) {
           var cityName = ""
         let location: String = pincode
@@ -83,6 +85,7 @@ import Combine
             }
         } )
     }
+  }
 }
 
 

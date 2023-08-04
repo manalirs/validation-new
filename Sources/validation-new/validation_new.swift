@@ -1,3 +1,7 @@
+import SwiftUI
+import CoreData
+import CoreLocation
+import Combine
 public struct validation_new {
     public private(set) var text = "Hello, World!"
      func Validation() -> String? {

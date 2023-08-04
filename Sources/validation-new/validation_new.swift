@@ -35,29 +35,29 @@ public struct validation_new {
         return emailPred.evaluate(with: email)
         
     }
-     func isValiphoneNumber(_ phoneNumber: String) -> Bool {
-        let phoneNumberRegEx = "^\\d{3}\\d{3}\\d{4}$"
-        let phoneNumberPred = NSPredicate(format:"SELF MATCHES %@", phoneNumberRegEx)
-        return phoneNumberPred.evaluate(with: phoneNumber)
-    }
+    //  func isValiphoneNumber(_ phoneNumber: String) -> Bool {
+    //     let phoneNumberRegEx = "^\\d{3}\\d{3}\\d{4}$"
+    //     let phoneNumberPred = NSPredicate(format:"SELF MATCHES %@", phoneNumberRegEx)
+    //     return phoneNumberPred.evaluate(with: phoneNumber)
+    // }
     
-    func limitUserName(_ upper: Int) {
-        if name.count > upper {
-            name = String(name.prefix(upper))
-        }
-    }
+    // func limitUserName(_ upper: Int) {
+    //     if name.count > upper {
+    //         name = String(name.prefix(upper))
+    //     }
+    // }
     
-    func limitPhoneNo(_ upper: Int) {
-        if phoneNumber.count > upper {
-            phoneNumber = String(phoneNumber.prefix(upper))
-        }
-    }
+    // func limitPhoneNo(_ upper: Int) {
+    //     if phoneNumber.count > upper {
+    //         phoneNumber = String(phoneNumber.prefix(upper))
+    //     }
+    // }
     
-    func limitPincode(_ upper: Int) {
-        if pincode.count > upper {
-            pincode = String(pincode.prefix(upper))
-        }
-    }
+    // func limitPincode(_ upper: Int) {
+    //     if pincode.count > upper {
+    //         pincode = String(pincode.prefix(upper))
+    //     }
+    // }
     
     func getloc(pincode: String) {
         @State  var cityName = ""
@@ -76,6 +76,5 @@ public struct validation_new {
         } )
     }
 
-    public init() {
-    }
+   
 }

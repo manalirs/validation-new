@@ -4,30 +4,30 @@ import CoreLocation
 import Combine
 public struct validation_new {
     public private(set) var text = "Hello, World!"
-     func Validation() -> String? {
-        if self.name.count == 0 {
-            errormsg = "Enter Correct UserName"
-        }
-        else  if  !self.isValiphoneNumber(phoneNumber) {
-            errormsg = "Enter correct phone number"
-        }
-        else  if  !self.isValidEmail(email) {
-            errormsg =  "Enter Correct Email"
+    //  func Validation() -> String? {
+    //     if self.name.count == 0 {
+    //         errormsg = "Enter Correct UserName"
+    //     }
+    //     else  if  !self.isValiphoneNumber(phoneNumber) {
+    //         errormsg = "Enter correct phone number"
+    //     }
+    //     else  if  !self.isValidEmail(email) {
+    //         errormsg =  "Enter Correct Email"
             
-        }
-        else if  pincode.count != 6  && self.pincode.count > 0 {
-            errormsg = "Enter Correct PINCODE"
+    //     }
+    //     else if  pincode.count != 6  && self.pincode.count > 0 {
+    //         errormsg = "Enter Correct PINCODE"
             
-        }
-        else if pincode.count == 6  && pincode.count != 0 {
-            self.getloc()
-            errormsg = "Form Submitted Successfully"
-        }
-        else {
-            errormsg = ""
-        }
-        return errormsg
-    }
+    //     }
+    //     else if pincode.count == 6  && pincode.count != 0 {
+    //         self.getloc()
+    //         errormsg = "Form Submitted Successfully"
+    //     }
+    //     else {
+    //         errormsg = ""
+    //     }
+    //     return errormsg
+    // }
     
      func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -66,7 +66,7 @@ public struct validation_new {
             if ((placemarks?.count)! > 0) {
                 let placemark: CLPlacemark = (placemarks?[0])!
                 self.cityName = placemark.locality!
-                print(cityName)
+              //  print(cityName)
             }
         } )
     }

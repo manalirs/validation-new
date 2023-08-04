@@ -58,8 +58,7 @@ public struct validation_new {
     //         pincode = String(pincode.prefix(upper))
     //     }
     // }
-    
-    func getloc(pincode: String) {
+     func getloc(pincode: String) {
         @State  var cityName = ""
         let location: String = pincode
         let geocoder: CLGeocoder = CLGeocoder()
@@ -70,11 +69,11 @@ public struct validation_new {
                 cityName = placemark.locality!
                 
                 let cityName = { (cityName: String) -> String in
-                    return "\(cityName)"
-       
+                    return "I'm going to \(cityName) in my car"
+                }
+            //    return <cityName>
+              //  print(cityName)
             }
         } )
     }
-
-   
 }

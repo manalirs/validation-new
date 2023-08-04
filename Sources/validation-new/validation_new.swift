@@ -6,8 +6,8 @@ import Combine
  public struct validation_new {
    @Binding var pincode: String
         public init(pincode: String) {
-         self.getloc(pincode:pincode)
-             //self._pincode = pincode
+       //  self.getloc(pincode:pincode)
+  self._pincode = pincode
           
          }
     //  func Validation() -> String? {

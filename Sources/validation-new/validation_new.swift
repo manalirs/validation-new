@@ -42,7 +42,7 @@ import Combine
         return phoneNumberPred.evaluate(with: phoneNumber)
     }
        var name1 = String()
-    func limitUserName(_ upper: Int,name: String) {
+   public func limitUserName(_ upper: Int,name: String) {
      
         if name.count > upper {
             name1 = String(name.prefix(upper))

@@ -44,9 +44,9 @@ import Combine
     }
   
    public func limitUserName(_ upper: Int,name: String) {
-     
+     var name1: String = ""
         if name.count > upper {
-            name = String(name.prefix(upper))
+            name1 = String(name.prefix(upper))
         }
     }
     

@@ -81,15 +81,15 @@ import Combine
         }
   }
 
- public struct validation_new1 {
+ public struct validation_new1 -> Bool {
 
 //  var pincode1: String
   var newEmail: Bool
 
-      public init(email: Bool) {
+      public init(email: String) {
      //   getloc(pincode:self.pincode)
 //  self.newEmail = email
-      isValidEmail(email)
+      isValidEmail(self.email)
          }
   
     func isValidEmail(_ email: String) -> Bool {

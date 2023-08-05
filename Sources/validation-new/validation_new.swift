@@ -2,18 +2,9 @@ import SwiftUI
 import CoreData
 import CoreLocation
 import Combine
-@available(iOS 14, macOS 11.0, *)
- public struct validation_new {
-
-  var pincode1: String
-//  var newEmail: String
-        public init(pincode: String) {
-     //   getloc(pincode:self.pincode)
-  self.pincode1 = pincode
-        getloc()
-          
-         }
-  
+//@available(iOS 14, macOS 11.0, *)
+ public class validation_new {
+        public init() {}
     //  func Validation() -> String? {
     //     if self.name.count == 0 {
     //         errormsg = "Enter Correct UserName"
@@ -81,16 +72,6 @@ import Combine
         }
   }
 
- public class validation_new1 {
-
-//  var pincode1: String
-//  var newEmail: String
-
-      public init() {}
-  //    //   getloc(pincode:self.pincode)
-  // self.newEmail = email
-  //     isValidEmail(self.newEmail)
-  //        }
   
    public func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
@@ -98,8 +79,8 @@ import Combine
         return emailPred.evaluate(with: email)
         
     }
- }
-
+ 
+}
 
 
 

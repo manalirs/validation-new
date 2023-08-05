@@ -84,7 +84,7 @@ import Combine
  public class validation_new1 {
 
 //  var pincode1: String
-  var newEmail: String
+//  var newEmail: String
 
       public init() {}
   //    //   getloc(pincode:self.pincode)

@@ -43,11 +43,13 @@ import Combine
         return phoneNumberPred.evaluate(with: phoneNumber)
     }
   
-   public func limitUserName(_ upper: Int,name: String) {
+   public func limitUserName(_ upper: Int,name: String)-> String {
      var name1: String = ""
         if name.count > upper {
             name1 = String(name.prefix(upper))
         }
+    print("name1--\(name)")
+    return name1
     }
     
     // func limitPhoneNo(_ upper: Int) {

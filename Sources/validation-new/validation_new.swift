@@ -86,7 +86,7 @@ import Combine
 //  var pincode1: String
   var newEmail: String
 
-  //     public init(email: String,isValue: Bool) {
+      public init() {}
   //    //   getloc(pincode:self.pincode)
   // self.newEmail = email
   //     isValidEmail(self.newEmail)

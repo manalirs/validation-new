@@ -67,9 +67,10 @@ import Combine
                     
                     cityName = placemark.locality!
                     UserDefaults.standard.set(cityName, forKey: "cityName")
-                 return cityName
+                
                 }
             } )
+     return cityName
         }
   
 

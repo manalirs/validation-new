@@ -4,7 +4,7 @@ import CoreLocation
 import Combine
 //@available(iOS 14, macOS 11.0, *)
  public class validation_new {
-    @State private var name = ""
+    var name = ""
         public init() {}
     //  func Validation() -> String? {
     //     if self.name.count == 0 {

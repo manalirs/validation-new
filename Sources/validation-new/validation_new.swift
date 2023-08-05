@@ -86,13 +86,13 @@ import Combine
 //  var pincode1: String
   var newEmail: String
 
-      public init(email: String,isValue: Bool) {
-     //   getloc(pincode:self.pincode)
-  self.newEmail = email
-      isValidEmail(self.newEmail)
-         }
+  //     public init(email: String,isValue: Bool) {
+  //    //   getloc(pincode:self.pincode)
+  // self.newEmail = email
+  //     isValidEmail(self.newEmail)
+  //        }
   
-    func isValidEmail(_ email: String) -> Bool {
+   public func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)

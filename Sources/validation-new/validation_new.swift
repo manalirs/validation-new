@@ -62,7 +62,7 @@ import Combine
   
     
    
-   public func getloc(pincode: String) -> String {
+   public func getloc(pincode: String) {
             var cityName = ""
             let location: String = pincode
             let geocoder: CLGeocoder = CLGeocoder()

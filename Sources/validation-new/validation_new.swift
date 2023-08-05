@@ -81,12 +81,12 @@ import Combine
         }
   }
 
- public struct validation_new1 -> Bool {
+ public struct validation_new1 {
 
 //  var pincode1: String
   var newEmail: Bool
 
-      public init(email: String) {
+      public init(email: String,isValue: Bool) {
      //   getloc(pincode:self.pincode)
 //  self.newEmail = email
       isValidEmail(self.email)

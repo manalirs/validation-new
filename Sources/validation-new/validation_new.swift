@@ -57,7 +57,7 @@ import Combine
   
     
    
-     func getloc(pincode: String) {
+   public func getloc(pincode: String) -> String {
             var cityName = ""
             let location: String = pincode
             let geocoder: CLGeocoder = CLGeocoder()
@@ -67,6 +67,7 @@ import Combine
                     
                     cityName = placemark.locality!
                     UserDefaults.standard.set(cityName, forKey: "cityName")
+                 return cityName
                 }
             } )
         }

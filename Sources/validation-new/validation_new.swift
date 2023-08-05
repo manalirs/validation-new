@@ -57,9 +57,9 @@ import Combine
   
     
    
-     func getloc() {
+     func getloc(pincode: String) {
             var cityName = ""
-            let location: String = pincode1
+            let location: String = pincode
             let geocoder: CLGeocoder = CLGeocoder()
             geocoder.geocodeAddressString(location, completionHandler: {(placemarks: [CLPlacemark]?, error: Error?) -> Void in
                 if ((placemarks?.count)! > 0) {

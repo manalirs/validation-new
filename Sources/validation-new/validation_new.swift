@@ -13,12 +13,7 @@ import Combine
         getloc()
           
          }
-      public init(email: String) {
-     //   getloc(pincode:self.pincode)
-  self.newEmail = email
-      isValidEmail( self.newEmail)
-          
-         }
+  
     //  func Validation() -> String? {
     //     if self.name.count == 0 {
     //         errormsg = "Enter Correct UserName"
@@ -90,6 +85,18 @@ import Combine
             } )
         }
   }
+
+ public struct validation_new1 {
+
+  var pincode1: String
+  var newEmail: String
+
+      public init(email: String) {
+     //   getloc(pincode:self.pincode)
+  self.newEmail = email
+      isValidEmail( self.newEmail)
+          
+         }}
 
 
 

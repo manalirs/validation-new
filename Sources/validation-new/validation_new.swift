@@ -70,7 +70,7 @@ import Combine
                 }
             } )
         }
-  }
+  
 
   
    public func isValidEmail(_ email: String) -> Bool {

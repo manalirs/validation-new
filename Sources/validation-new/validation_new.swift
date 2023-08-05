@@ -84,11 +84,11 @@ import Combine
  public struct validation_new1 {
 
 //  var pincode1: String
-  var newEmail: Bool
+  var newEmail: String
 
       public init(email: String,isValue: Bool) {
      //   getloc(pincode:self.pincode)
-//  self.newEmail = email
+  self.newEmail = email
       isValidEmail(self.email)
          }
   

@@ -42,11 +42,11 @@ import Combine
         return phoneNumberPred.evaluate(with: phoneNumber)
     }
     
-    // func limitUserName(_ upper: Int) {
-    //     if name.count > upper {
-    //         name = String(name.prefix(upper))
-    //     }
-    // }
+    func limitUserName(_ upper: Int,name: String) {
+        if name.count > upper {
+            name = String(name.prefix(upper))
+        }
+    }
     
     // func limitPhoneNo(_ upper: Int) {
     //     if phoneNumber.count > upper {

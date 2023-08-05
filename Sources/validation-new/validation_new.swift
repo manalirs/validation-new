@@ -30,12 +30,17 @@ import Combine
     //     return errormsg
     // }
     
-   
-    //  func isValiphoneNumber(_ phoneNumber: String) -> Bool {
-    //     let phoneNumberRegEx = "^\\d{3}\\d{3}\\d{4}$"
-    //     let phoneNumberPred = NSPredicate(format:"SELF MATCHES %@", phoneNumberRegEx)
-    //     return phoneNumberPred.evaluate(with: phoneNumber)
-    // }
+      public func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
+  
+    public func isValiphoneNumber(_ phoneNumber: String) -> Bool {
+        let phoneNumberRegEx = "^\\d{3}\\d{3}\\d{4}$"
+        let phoneNumberPred = NSPredicate(format:"SELF MATCHES %@", phoneNumberRegEx)
+        return phoneNumberPred.evaluate(with: phoneNumber)
+    }
     
     // func limitUserName(_ upper: Int) {
     //     if name.count > upper {
@@ -71,16 +76,6 @@ import Combine
                 }
             } )
         }
-  
-
-  
-   public func isValidEmail(_ email: String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailPred.evaluate(with: email)
-        
-    }
- 
 }
 
 

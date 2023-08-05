@@ -4,6 +4,7 @@ import CoreLocation
 import Combine
 //@available(iOS 14, macOS 11.0, *)
  public class validation_new {
+    @State private var name = ""
         public init() {}
     //  func Validation() -> String? {
     //     if self.name.count == 0 {
@@ -42,7 +43,7 @@ import Combine
         return phoneNumberPred.evaluate(with: phoneNumber)
     }
   
-   public func limitUserName(_ upper: Int,name: String) {
+   public func limitUserName(_ upper: Int) {
      
         if name.count > upper {
             self.name = String(name.prefix(upper))

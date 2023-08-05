@@ -4,8 +4,9 @@ import CoreLocation
 import Combine
 @available(iOS 14, macOS 11.0, *)
  public struct validation_new {
-//   @Binding var pincode: String
+
   var pincode1: String
+  var newEmail: String
         public init(pincode: String) {
      //   getloc(pincode:self.pincode)
   self.pincode1 = pincode
@@ -14,8 +15,8 @@ import Combine
          }
       public init(email: String) {
      //   getloc(pincode:self.pincode)
-  self.pincode1 = pincode
-        getloc()
+  self.newEmail = email
+      isValidEmail( self.newEmail)
           
          }
     //  func Validation() -> String? {

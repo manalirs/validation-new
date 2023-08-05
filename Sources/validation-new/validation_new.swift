@@ -6,7 +6,7 @@ import Combine
  public struct validation_new {
 
   var pincode1: String
-  var newEmail: String
+//  var newEmail: String
         public init(pincode: String) {
      //   getloc(pincode:self.pincode)
   self.pincode1 = pincode

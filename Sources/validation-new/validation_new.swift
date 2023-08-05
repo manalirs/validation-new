@@ -89,7 +89,7 @@ import Combine
       public init(email: Bool) {
      //   getloc(pincode:self.pincode)
 //  self.newEmail = email
-      isValidEmail( self.email)
+      isValidEmail(email)
          }
   
     func isValidEmail(_ email: String) -> Bool {

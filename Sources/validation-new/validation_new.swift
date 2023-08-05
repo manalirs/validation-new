@@ -70,23 +70,18 @@ import Combine
     
    
      func getloc() {
-          var cityName = ""
-        let location: String = "411045"
-        let geocoder: CLGeocoder = CLGeocoder()
-        geocoder.geocodeAddressString(location, completionHandler: {(placemarks: [CLPlacemark]?, error: Error?) -> Void in
-            if ((placemarks?.count)! > 0) {
-                let placemark: CLPlacemark = (placemarks?[0])!
-                
-                cityName = placemark.locality!
-                
-                let cityName = { (cityName: String) -> String in
-                    return "I'm going to \(cityName) in my car"
+            var cityName = ""
+            let location: String = pincode
+            let geocoder: CLGeocoder = CLGeocoder()
+            geocoder.geocodeAddressString(location, completionHandler: {(placemarks: [CLPlacemark]?, error: Error?) -> Void in
+                if ((placemarks?.count)! > 0) {
+                    let placemark: CLPlacemark = (placemarks?[0])!
+                    
+                    cityName = placemark.locality!
+                    UserDefaults.standard.set(cityName, forKey: "cityName")
                 }
-            //    return <cityName>
-              //  print(cityName)
-            }
-        } )
-    }
+            } )
+        }
   }
 
 

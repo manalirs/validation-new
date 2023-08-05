@@ -12,6 +12,12 @@ import Combine
         getloc()
           
          }
+      public init(email: String) {
+     //   getloc(pincode:self.pincode)
+  self.pincode1 = pincode
+        getloc()
+          
+         }
     //  func Validation() -> String? {
     //     if self.name.count == 0 {
     //         errormsg = "Enter Correct UserName"

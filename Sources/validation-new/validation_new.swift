@@ -81,7 +81,7 @@ import Combine
         }
   }
 
- public struct validation_new1 {
+ public class validation_new1 {
 
 //  var pincode1: String
   var newEmail: String

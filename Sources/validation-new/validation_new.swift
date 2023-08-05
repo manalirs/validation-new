@@ -41,11 +41,11 @@ import Combine
         let phoneNumberPred = NSPredicate(format:"SELF MATCHES %@", phoneNumberRegEx)
         return phoneNumberPred.evaluate(with: phoneNumber)
     }
-       var name1 = String()
+  
    public func limitUserName(_ upper: Int,name: String) {
      
         if name.count > upper {
-            name1 = String(name.prefix(upper))
+            self.name = String(name.prefix(upper))
         }
     }
     

@@ -84,12 +84,12 @@ import Combine
  public struct validation_new1 {
 
 //  var pincode1: String
-  var newEmail: String
+  var newEmail: Bool
 
-      public init(email: String) {
+      public init(email: Bool) {
      //   getloc(pincode:self.pincode)
-  self.newEmail = email
-      isValidEmail( self.newEmail)
+//  self.newEmail = email
+      isValidEmail( self.email)
          }
   
     func isValidEmail(_ email: String) -> Bool {

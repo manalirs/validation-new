@@ -94,12 +94,12 @@ public class validation_new {
                 }
             } )
         }
-
+  var name = ""
 
 }
       @available(iOS 15.0, *)
       extension View {
-       var name = ""
+     
   public func vv()-> some View {
          
   frame(width: 200, height: 30, alignment: .center)

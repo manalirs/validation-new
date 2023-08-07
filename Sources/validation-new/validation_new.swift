@@ -8,7 +8,7 @@ import Combine
 public class validation_new {
       @State var showingAlert = false
       var errormsg = ""
-       public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String)()-> some View{
+       public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String)() {
                    Button("Submit") {
                     errormsg = Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
                     showingAlert = true

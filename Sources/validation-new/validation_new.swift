@@ -64,8 +64,8 @@ public class validation_new {
     }
   
 
- public  func limitUserName(name: String) {
-    name = name1
+ public  func limitUserName(name1: String)-> String {
+   
       if name.count > 4 {
                                     name = String(name.prefix(4))
                                 }

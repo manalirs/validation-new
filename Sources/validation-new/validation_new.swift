@@ -13,7 +13,7 @@ import Combine
 public class validation_new {
     @State var showingAlert = false
    let UserNameLimit = 5
-      @State private var name = ""
+       var name:String()
  //     var errormsg = ""
     public init() {}
       

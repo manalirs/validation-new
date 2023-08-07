@@ -19,7 +19,7 @@ public class validation_new {
     let phonenolimit = 10
     let pincodeLimit = 6
     
-      var errormsg = ""
+ //     var errormsg = ""
     public init() {}
      public func Validation(name: String,pincode:String,phoneNumber:String,email:String) -> String? {      
          let errorMessage = String()

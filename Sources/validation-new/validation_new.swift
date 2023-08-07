@@ -6,7 +6,7 @@ import Combine
 public class validation_new {
 
       var errormsg = ""
- 
+  @FocusState private var isTextFieldFocused: Bool
     
  //     var errormsg = ""
     public init() {}

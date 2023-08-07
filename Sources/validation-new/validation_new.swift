@@ -2,7 +2,7 @@ import SwiftUI
 import CoreData
 import CoreLocation
 import Combine
-
+@available(iOS 15.0, *)
 public class validation_new {
  var showingAlert = false
      private var email = ""

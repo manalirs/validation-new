@@ -15,8 +15,8 @@ public class validation_new {
     public init() {}
        public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String) {
                    Button("Submit") {
-                    errormsg = Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
-                    showingAlert = true
+                    self.errormsg = self.Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
+                    self.showingAlert = true
                 }
                 .alert(errormsg, isPresented: $showingAlert) {
                     Button("OK", role: .cancel) { }

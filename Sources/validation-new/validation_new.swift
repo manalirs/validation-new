@@ -5,7 +5,14 @@ import Combine
 //@available(iOS 14, macOS 11.0, *)
 public class validation_new {
     public init() {}
-     public func Validation() -> String? {        if self.name.count == 0 {
+     public func Validation() -> String? {      
+         
+                if let errorMessage = Validation() {
+                    print(errorMessage)
+                    return
+                }
+                
+        if self.name.count == 0 {
             errormsg = "Enter Correct UserName"
         }
         else  if  !isValiphoneNumber(phoneNumber){

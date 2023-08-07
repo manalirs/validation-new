@@ -98,7 +98,7 @@ public class validation_new {
       @available(iOS 13.0, *)
       extension View {
   public func vv()-> some View {
-  frame(width: 200, height: 30, alignment: .center)
+  .frame(width: 200, height: 30, alignment: .center)
               .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
   }
 }

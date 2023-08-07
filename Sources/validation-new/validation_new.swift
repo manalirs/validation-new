@@ -97,7 +97,7 @@ public class validation_new {
                     Text("Name :")
                     Spacer()
                     Spacer()
-                    TextField("Enter username", text: name)
+                    TextField("Enter username", text: $name)
                         .frame(width: 200, height: 30, alignment: .trailing)
                         .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
                         .onReceive(Just(name)) { _ in let u = validation_new().limitUserName(self.UserNameLimit, name: self.name) }

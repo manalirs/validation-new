@@ -14,7 +14,7 @@ public class validation_new {
    
    var name = String()
     var phoneNumber = String()
-   
+   var pincode = String()
  //     var errormsg = ""
     public init() {}
       
@@ -74,24 +74,21 @@ public class validation_new {
    }
     public  func limitPhoneNo(phoneNumber1: String)-> String {
    phoneNumber = phoneNumber1
-      if phoneNumber1.count > 4 {
+      if phoneNumber1.count > 10 {
                                     phoneNumber = String(phoneNumber1.prefix(4))
                                 }
     return phoneNumber
    }
      
-    
-    // func limitPhoneNo(_ upper: Int) {
-    //     if phoneNumber.count > upper {
-    //         phoneNumber = String(phoneNumber.prefix(upper))
-    //     }
-    // }
-    
-    // func limitPincode(_ upper: Int) {
-    //     if pincode.count > upper {
-    //         pincode = String(pincode.prefix(upper))
-    //     }
-  //}
+   public  func limitPincode(pincode1: String)-> String {
+   pincode = pincode1
+      if pincode1.count > 6 {
+                                    pincode = String(pincode1.prefix(4))
+                                }
+    return pincode
+   }
+       
+  
   
    
    public func getloc(pincode: String) {

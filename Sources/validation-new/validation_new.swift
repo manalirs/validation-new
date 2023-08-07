@@ -2,7 +2,7 @@ import SwiftUI
 import CoreData
 import CoreLocation
 import Combine
-//@available(iOS 14, macOS 11.0, *)
+
 public class validation_new {
       var errormsg = ""
     public init() {}
@@ -73,7 +73,148 @@ public class validation_new {
     //     }
   //}
   
-    
+    public func setUI() {
+                  ScrollView {
+            VStack(spacing: 10) {
+                Text("Personal Details").font(.largeTitle).fontWeight(.medium)
+                    .multilineTextAlignment(.center)
+                HStack {
+                    Text("Name :")
+                    Spacer()
+                    Spacer()
+                    TextField("Enter username", text: $name)
+                        .frame(width: 200, height: 30, alignment: .trailing)
+                        .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
+                        .onReceive(Just(name)) { _ in let u = validation_new().limitUserName(UserNameLimit, name: name) }
+                        .padding(.all)
+                        .focused($isTextFieldFocused)
+                }
+                HStack {
+                    Text("Phone Number :")
+                    Spacer()
+                    TextField("Enter phoneNumber", text: $phoneNumber)
+                        .frame(width: 200, height: 30, alignment: .trailing)
+                        .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
+                        .padding(.all)
+                        .keyboardType(.numberPad)
+                        .focused($isTextFieldFocused)
+                        .onReceive(Just(phoneNumber)) { _ in limitPhoneNo(phonenolimit) }
+                        .onChange(of: isTextFieldFocused) { yes in
+                            if !validation_new().isValiphoneNumber(phoneNumber) && !self.phoneNumber.isEmpty{
+                                errormsg = "Enter correct phone number"
+                            }
+                            else
+                            {
+                                errormsg = ""
+                            }
+                        }
+                }
+                HStack {
+                    Text("Email :")
+                    Spacer()
+                    TextField("Email", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
+                        .frame(width: 200, height: 30, alignment: .trailing)
+                        .padding(.all)
+                        . focused($isTextFieldFocused)
+                        .onChange(of: isTextFieldFocused){ new in
+                            
+                            if !validation_new().isValidEmail(email)  {
+                                errormsg =  "Enter Correct Email"
+                            }
+                            else {
+                                errormsg = ""
+                            }
+                            
+                        }
+                        .autocapitalization(.none)
+                }
+                
+                HStack {
+                    Text("Address :")
+                    Spacer()
+                    TextField("Flat no/Building :", text: $address)
+                        .frame(width: 200, height: 30, alignment: .trailing)
+                        .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
+                        .padding(.all)
+                        .focused($isTextFieldFocused)
+                    
+                }
+                HStack {
+                    Spacer()
+                    TextField("Street Name :", text: $streetName)
+                        .frame(width: 200, height: 30, alignment: .trailing)
+                        .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
+                        .padding(.all)
+                        .focused($isTextFieldFocused)
+                    
+                }
+                HStack {
+                    Spacer()
+                    TextField("Landmark :", text: $landmark)
+                        .frame(width: 200, height: 30, alignment: .trailing)
+                        .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
+                        .padding(.all)
+                        .focused($isTextFieldFocused)
+                    
+                }
+                HStack {
+                    Text("PinCode :")
+                    Spacer()
+                    TextField("Enter PinCode", text: $pincode)
+                        .frame(width: 200, height: 30, alignment: .trailing)
+                        .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
+                        .padding(.all)
+                        .keyboardType(.numberPad)
+                        .onReceive(Just(pincode)) { _ in limitPincode(pincodeLimit) }
+                        . focused($isTextFieldFocused)
+                        .onChange(of: isTextFieldFocused) { new in
+                            if pincode.count == 6 || !pincode.isEmpty {
+                                validation_new().getloc(pincode: pincode)
+                               cityName = UserDefaults.standard.string(forKey: "cityName")!
+                                print("city--\(cityName )")
+                                errormsg = ""
+                            }
+                            else {
+                                errormsg = "Enter Correct PINCODE"
+                            }
+                        }
+                }
+                HStack {
+                    Text("City :")
+                    Spacer()
+                    TextField(cityName, text: $cityName)
+                        .frame(width: 200, height: 30, alignment: .trailing)
+                        .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
+                        .padding(.all)
+                        .disabled(true)
+                }
+            }
+            .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
+            .textContentType(.emailAddress)
+            .padding(.all)
+         //   Text(errormsg)
+            VStack{
+                Button("Submit") {
+                    errormsg = validation_new().Validation(name:self.name,pincode:self.pincode,phoneNumber: self.phoneNumber,email:self.email)!
+                    showingAlert = true
+                }
+                .alert(errormsg, isPresented: $showingAlert) {
+                    Button("OK", role: .cancel) { }
+                }
+                .font(.largeTitle)
+            }
+            .frame(width: 200, height: 25, alignment: .center)
+            .padding(.all)
+            .foregroundColor(.black)
+            .cornerRadius(22)
+     //       .font(.largeTitle).fontWeight(.medium)
+            .background(Color.yellow)
+
+            Spacer()
+            
+        }
+    }
    
    public func getloc(pincode: String) {
             var cityName = ""

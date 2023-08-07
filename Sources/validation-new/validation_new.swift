@@ -116,7 +116,7 @@ public class validation_new {
             .padding(.all)
             .foregroundColor(.black)
             .cornerRadius(22)
-     //       .font(.largeTitle).fontWeight(.medium)
+           .font(.largeTitle).fontWeight(.medium)
             .background(Color.yellow)
             }
   public func vv()-> some View {

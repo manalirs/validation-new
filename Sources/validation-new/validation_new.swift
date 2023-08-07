@@ -7,10 +7,10 @@ public class validation_new {
     public init() {}
      public func Validation(name: String,pincode:String) -> String? {      
          
-                if let errorMessage = Validation(name: name, pincode: pincode) {
-                    print(errorMessage)
-                    return
-                }
+                // if let errorMessage = Validation(name: name, pincode: pincode) {
+                //     print(errorMessage)
+                //     return
+                // }
                 
         if self.name.count == 0 {
             errormsg = "Enter Correct UserName"

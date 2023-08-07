@@ -63,14 +63,13 @@ public class validation_new {
         return phoneNumberPred.evaluate(with: phoneNumber)
     }
   
-   public func limitUserName(_ upper: Int,name: String)-> String {
-     var name1: String = ""
-        if name.count > upper {
-            name1 = String(name.prefix(upper))
-        }
-    print("name1--\(name)")
-    return name1
-    }
+
+ public  func limitUserName(_ upper: Int) {
+       if name.count > upper {
+           name = String(name.prefix(upper))
+       }
+   }
+    
     
     // func limitPhoneNo(_ upper: Int) {
     //     if phoneNumber.count > upper {

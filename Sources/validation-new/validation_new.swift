@@ -71,7 +71,14 @@ public class validation_new {
                                 }
     return name
    }
-    
+    public  func limitPhoneNo(phoneNumber1: String)-> String {
+   phoneNumber = phoneNumber1
+      if phoneNumber1.count > 4 {
+                                    phoneNumber = String(phoneNumber1.prefix(4))
+                                }
+    return phoneNumber
+   }
+     
     
     // func limitPhoneNo(_ upper: Int) {
     //     if phoneNumber.count > upper {

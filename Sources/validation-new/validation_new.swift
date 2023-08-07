@@ -5,9 +5,10 @@ import CoreData
 import CoreLocation
 import Combine
 @available(iOS 15.0, *)
-public class validation_new {
-      @State var showingAlert = false
+  @State var showingAlert = false
       var errormsg = ""
+public class validation_new {
+    
 
       
     

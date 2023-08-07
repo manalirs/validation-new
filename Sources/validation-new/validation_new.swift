@@ -100,6 +100,7 @@ public class validation_new {
   public func vv()-> some View {
   frame(width: 200, height: 30, alignment: .center)
               .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
+                 .padding(.all)
   }
 }
 

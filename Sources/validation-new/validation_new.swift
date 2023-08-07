@@ -13,23 +13,7 @@ public class validation_new {
     
  //     var errormsg = ""
     public init() {}
-       public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String) -> some View {
-                   Button("Submit") {
-                    self.errormsg = self.Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
-                    self.showingAlert = true
-                }
-                .alert(errormsg, isPresented: $showingAlert) {
-                    Button("OK", role: .cancel) { }
-                }
-                .font(.largeTitle)
-         
-            .frame(width: 200, height: 25, alignment: .center)
-            .padding(.all)
-            .foregroundColor(.black)
-            .cornerRadius(22)
-     //       .font(.largeTitle).fontWeight(.medium)
-            .background(Color.yellow)
-            }
+      
      public func Validation(name: String,pincode:String,phoneNumber:String,email:String) -> String? {      
          let errorMessage = String()
                 // if let errorMessage = Validation(name: name, pincode: pincode) {
@@ -117,7 +101,23 @@ public class validation_new {
 }
       @available(iOS 15.0, *)
       extension View {
-     
+      public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String) -> some View {
+                   Button("Submit") {
+                    self.errormsg = self.Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
+                    self.showingAlert = true
+                }
+                .alert(errormsg, isPresented: $showingAlert) {
+                    Button("OK", role: .cancel) { }
+                }
+                .font(.largeTitle)
+         
+            .frame(width: 200, height: 25, alignment: .center)
+            .padding(.all)
+            .foregroundColor(.black)
+            .cornerRadius(22)
+     //       .font(.largeTitle).fontWeight(.medium)
+            .background(Color.yellow)
+            }
   public func vv()-> some View {
          
   frame(width: 200, height: 30, alignment: .center)

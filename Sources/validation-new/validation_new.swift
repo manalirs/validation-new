@@ -5,7 +5,7 @@ import Combine
 //@available(iOS 14, macOS 11.0, *)
 public class validation_new {
     public init() {}
-     public func Validation() -> String? {      
+     public func Validation(name: String,pincode:String) -> String? {      
          
                 if let errorMessage = Validation() {
                     print(errorMessage)

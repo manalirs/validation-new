@@ -99,6 +99,7 @@ public class validation_new {
       extension View {
   public func vv()-> some View {
   frame(width: 200, height: 30, alignment: .center)
+              .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
   }
 }
 

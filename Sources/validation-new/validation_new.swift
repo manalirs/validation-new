@@ -99,7 +99,7 @@ public class validation_new {
 }
       @available(iOS 15.0, *)
       extension View {
-      @State private var name = ""
+       var name = ""
   public func vv()-> some View {
          
   frame(width: 200, height: 30, alignment: .center)

@@ -13,7 +13,7 @@ public class validation_new {
     
  //     var errormsg = ""
     public init() {}
-       public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String) {
+       public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String) -> some View {
                    Button("Submit") {
                     self.errormsg = self.Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
                     self.showingAlert = true

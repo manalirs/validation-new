@@ -95,7 +95,7 @@ public class validation_new {
             } )
         }
   var name = ""
-  @FocusState private var isTextFieldFocused: Bool
+
 }
       @available(iOS 15.0, *)
       extension View {
@@ -105,7 +105,7 @@ public class validation_new {
   frame(width: 200, height: 30, alignment: .center)
               .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
                  .padding(.all)
-          .focused($isTextFieldFocused)
+         
         
   }
 }

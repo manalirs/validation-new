@@ -108,9 +108,7 @@ public class validation_new {
                     errormsg = validation_new().Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
                   showingAlert = true
                 }
-                .alert(errormsg, isPresented: validation_new().$showingAlert) {
-                    Button("OK", role: .cancel) { }
-                }
+            
                 .font(.largeTitle)
          
             .frame(width: 200, height: 25, alignment: .center)

@@ -110,7 +110,7 @@ public class validation_new {
                 }
             } )
         }
-  var name = ""
+ 
 
 }
       @available(iOS 15.0, *)

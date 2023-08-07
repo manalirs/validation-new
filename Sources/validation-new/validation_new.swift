@@ -10,7 +10,7 @@ public class validation_new {
       var errormsg = ""
        public func buttonubmit()-> some View{
                    Button("Submit") {
-                    errormsg = validation_new().Validation(name:self.name,pincode:self.pincode,phoneNumber: self.phoneNumber,email:self.email)!
+                    errormsg = Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
                     showingAlert = true
                 }
                 .alert(errormsg, isPresented: $showingAlert) {

@@ -64,7 +64,8 @@ public class validation_new {
     }
   
 
- public  func limitUserName(_ upper: Int) {
+ public  func limitUserName(_ upper: Int , name1: String) {
+    name = name1
        if name.count > upper {
            name = String(name.prefix(upper))
        }

@@ -98,11 +98,10 @@ public class validation_new {
 }
       @available(iOS 13.0, *)
       extension View {
-                 @available(iOS 15.0, *)
-     
+             
   public func vv()-> some View {
-          @FocusState  var isTextFieldFocused: Bool
-return  frame(width: 200, height: 30, alignment: .center)
+         
+  frame(width: 200, height: 30, alignment: .center)
               .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
                  .padding(.all)
          .focused($isTextFieldFocused)

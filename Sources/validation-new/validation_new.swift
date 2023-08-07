@@ -8,7 +8,12 @@ import Combine
 public class validation_new {
       @State var showingAlert = false
       var errormsg = ""
-       public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String)() {
+
+      
+    
+ //     var errormsg = ""
+    public init() {}
+       public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String) {
                    Button("Submit") {
                     errormsg = Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
                     showingAlert = true
@@ -25,9 +30,6 @@ public class validation_new {
      //       .font(.largeTitle).fontWeight(.medium)
             .background(Color.yellow)
             }
-    
- //     var errormsg = ""
-    public init() {}
      public func Validation(name: String,pincode:String,phoneNumber:String,email:String) -> String? {      
          let errorMessage = String()
                 // if let errorMessage = Validation(name: name, pincode: pincode) {

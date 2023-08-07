@@ -1,3 +1,4 @@
+
 import SwiftUI
 import CoreData
 import CoreLocation
@@ -97,8 +98,9 @@ public class validation_new {
 }
       @available(iOS 13.0, *)
       extension View {
-              @FocusState private var isTextFieldFocused: Bool
+            
   public func vv()-> some View {
+          @FocusState private var isTextFieldFocused: Bool
   frame(width: 200, height: 30, alignment: .center)
               .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
                  .padding(.all)

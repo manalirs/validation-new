@@ -9,11 +9,12 @@ import Combine
       var errormsg = ""
 
       
-@available(iOS 13.0, *)
+
 public class validation_new {
-    @State var showingAlert = false
-   let UserNameLimit = 5
-       var name:String()
+   
+   var name = String()
+    var phoneNumber = String()
+   
  //     var errormsg = ""
     public init() {}
       

@@ -3,7 +3,8 @@ import CoreData
 import CoreLocation
 import Combine
 //@available(iOS 14, macOS 11.0, *)
-
+public class validation_new {
+    public init() {}
     //  func Validation() -> String? {
     //     if self.name.count == 0 {
     //         errormsg = "Enter Correct UserName"

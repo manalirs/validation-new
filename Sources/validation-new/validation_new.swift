@@ -107,7 +107,7 @@ public class validation_new {
   frame(width: 200, height: 30, alignment: .center)
               .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
                  .padding(.all)
-          .onReceive(Just(name)) { _ in let u = limitUserName(UserNameLimit, name: name) 
+          .onReceive(Just(name)) { _ in let limitUserName(UserNameLimit, name: name) }
         
   }
 }

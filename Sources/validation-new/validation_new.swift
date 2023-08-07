@@ -7,13 +7,13 @@ import Combine
 @available(iOS 15.0, *)
    var showingAlert = false
       var errormsg = ""
- var name = ""
-        let UserNameLimit = 5
+
+      
 @available(iOS 13.0, *)
 public class validation_new {
     @State var showingAlert = false
- 
-    
+   let UserNameLimit = 5
+      @State private var name = ""
  //     var errormsg = ""
     public init() {}
       

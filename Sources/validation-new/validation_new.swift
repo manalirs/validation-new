@@ -92,6 +92,13 @@ public class validation_new {
                 }
             } )
         }
+      
+      extension View {
+  public func vv {
+  frame(width: 200, height: 30, alignment: .center))
+  }
+}
+
 }
 
 

@@ -13,17 +13,17 @@ public class validation_new {
                 //     return
                 // }
                 
-        if self.name.count == 0 {
+        if name.count == 0 {
             errormsg = "Enter Correct UserName"
         }
-        else  if  !isValiphoneNumber(phoneNumber){
-            errormsg = "Enter correct phone number"
-        }
-        else  if isValidEmail(email) {
-            errormsg =  "Enter Correct Email"
+        // else  if  !isValiphoneNumber(phoneNumber){
+        //     errormsg = "Enter correct phone number"
+        // }
+        // else  if isValidEmail(email) {
+        //     errormsg =  "Enter Correct Email"
 
-        }
-        else if  pincode.count != 6  && self.pincode.count > 0 {
+        // }
+        else if  pincode.count != 6  && pincode.count > 0 {
             errormsg = "Enter Correct PINCODE"
             
         }

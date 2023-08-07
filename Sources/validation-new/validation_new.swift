@@ -103,21 +103,7 @@ public class validation_new {
 }
       @available(iOS 15.0, *)
       extension View {
-      public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String) -> some View {
-                   Button("Submit") {
-                    errormsg = validation_new().Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
-                  showingAlert = true
-                }
-            
-                .font(.largeTitle)
-         
-            .frame(width: 200, height: 25, alignment: .center)
-            .padding(.all)
-            .foregroundColor(.black)
-            .cornerRadius(22)
-         //  .font(.largeTitle).fontWeight(.medium)
-            .background(Color.yellow)
-            }
+      
   public func vv()-> some View {
          
   frame(width: 200, height: 30, alignment: .center)

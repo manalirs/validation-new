@@ -6,7 +6,7 @@ import Combine
 public class validation_new {
 
       var errormsg = ""
-  @FocusState private var isTextFieldFocused: Bool
+
     
  //     var errormsg = ""
     public init() {}
@@ -97,6 +97,7 @@ public class validation_new {
 }
       @available(iOS 13.0, *)
       extension View {
+              @FocusState private var isTextFieldFocused: Bool
   public func vv()-> some View {
   frame(width: 200, height: 30, alignment: .center)
               .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))

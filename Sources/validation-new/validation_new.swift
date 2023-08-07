@@ -99,23 +99,7 @@ public class validation_new {
 }
       @available(iOS 15.0, *)
       extension View {
-      public func ss()-> some View {
-             HStack {
-                    
-                    Text("Name :")
-                    Spacer()
-                    Spacer()
-                   
-                    
-                }
-                
-                HStack {
-                    Text("Phone Number :")
-                    Spacer()   
-                }
-            
-      }
-            
+      @State private var name = ""
   public func vv()-> some View {
          
   frame(width: 200, height: 30, alignment: .center)

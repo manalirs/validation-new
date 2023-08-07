@@ -8,7 +8,7 @@ import Combine
    var showingAlert = false
       var errormsg = ""
 public class validation_new {
-    
+    @State var showingAlert = false
 
       
     
@@ -107,7 +107,7 @@ public class validation_new {
                     errormsg = validation_new().Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
                   showingAlert = true
                 }
-                .alert(errormsg, isPresented: $showingAlert) {
+                .alert(errormsg, isPresented: $validation_new().showingAlert) {
                     Button("OK", role: .cancel) { }
                 }
                 .font(.largeTitle)

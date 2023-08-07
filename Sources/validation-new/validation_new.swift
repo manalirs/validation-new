@@ -4,20 +4,9 @@ import CoreLocation
 import Combine
 @available(iOS 15.0, *)
 public class validation_new {
- var showingAlert = false
-      var email = ""
-      var phoneNumber = ""
-      var address = ""
-      var streetName = ""
-      var landmark = ""
-      var pincode = ""
-     @State private  var name = ""
-      var cityName = ""
+
       var errormsg = ""
-    @FocusState private var isTextFieldFocused: Bool
-    let UserNameLimit = 5
-    let phonenolimit = 10
-    let pincodeLimit = 6
+ 
     
  //     var errormsg = ""
     public init() {}

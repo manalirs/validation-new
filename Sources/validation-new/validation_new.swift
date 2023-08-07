@@ -4,6 +4,21 @@ import CoreLocation
 import Combine
 
 public class validation_new {
+          @State var showingAlert = false
+    @State private var email = ""
+    @State private var phoneNumber = ""
+    @State private var address = ""
+    @State private var streetName = ""
+    @State private var landmark = ""
+    @State private var pincode = ""
+    @State private var name = ""
+    @State private var cityName = ""
+    @State private var errormsg = ""
+    @FocusState private var isTextFieldFocused: Bool
+    let UserNameLimit = 5
+    let phonenolimit = 10
+    let pincodeLimit = 6
+    
       var errormsg = ""
     public init() {}
      public func Validation(name: String,pincode:String,phoneNumber:String,email:String) -> String? {      

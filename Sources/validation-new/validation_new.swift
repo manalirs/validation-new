@@ -1,4 +1,5 @@
 
+
 import SwiftUI
 import CoreData
 import CoreLocation
@@ -96,14 +97,17 @@ public class validation_new {
 
 
 }
-      @available(iOS 13.0, *)
+      @available(iOS 15.0, *)
       extension View {
-             
+                @State private var name = ""
+  
+    let UserNameLimit = 5
   public func vv()-> some View {
          
   frame(width: 200, height: 30, alignment: .center)
               .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
                  .padding(.all)
+          .onReceive(Just(name)) { _ in let u = limitUserName(UserNameLimit, name: name) 
         
   }
 }

@@ -99,7 +99,7 @@ public class validation_new {
 }
       @available(iOS 15.0, *)
       extension View {
-      public func ss-> some View {
+      public func ss()-> some View {
              HStack {
                     
                     Text("Name :")

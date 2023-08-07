@@ -4,16 +4,16 @@ import CoreLocation
 import Combine
 
 public class validation_new {
-          @State var showingAlert = false
-    @State private var email = ""
-    @State private var phoneNumber = ""
-    @State private var address = ""
-    @State private var streetName = ""
-    @State private var landmark = ""
-    @State private var pincode = ""
-    @State private var name = ""
-    @State private var cityName = ""
-    @State private var errormsg = ""
+ var showingAlert = false
+     private var email = ""
+     private var phoneNumber = ""
+     private var address = ""
+     private var streetName = ""
+     private var landmark = ""
+     private var pincode = ""
+     private var name = ""
+     private var cityName = ""
+     private var errormsg = ""
     @FocusState private var isTextFieldFocused: Bool
     let UserNameLimit = 5
     let phonenolimit = 10

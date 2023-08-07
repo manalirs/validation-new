@@ -6,7 +6,7 @@ import Combine
 public class validation_new {
       var errormsg = ""
     public init() {}
-     public func Validation(name: String,pincode:String) -> String? {      
+     public func Validation(name: String,pincode:String,phoneNumber:String,email:String) -> String? {      
          let errorMessage = String()
                 // if let errorMessage = Validation(name: name, pincode: pincode) {
                 //     print(errorMessage)
@@ -16,24 +16,24 @@ public class validation_new {
         if name.count == 0 {
             errormsg = "Enter Correct UserName"
         }
-        // else  if  !isValiphoneNumber(phoneNumber){
-        //     errormsg = "Enter correct phone number"
-        // }
-        // else  if isValidEmail(email) {
-        //     errormsg =  "Enter Correct Email"
+        else  if  !isValiphoneNumber(phoneNumber){
+            errormsg = "Enter correct phone number"
+        }
+        else  if isValidEmail(email) {
+            errormsg =  "Enter Correct Email"
 
-        // }
+        }
         else if  pincode.count != 6  && pincode.count > 0 {
             errormsg = "Enter Correct PINCODE"
             
         }
-        // else if pincode.count == 6  && pincode.count != 0 {
+        else if pincode.count == 6  && pincode.count != 0 {
      
-        //     _ = getloc(pincode: pincode)
-        //         cityName = UserDefaults.standard.string(forKey: "cityName")!
-        //         print("city--\(cityName )")
-        //     errormsg = "Form Submitted Successfully"
-        // }
+            _ = getloc(pincode: pincode)
+             let cityName = UserDefaults.standard.string(forKey: "cityName")!
+                print("city--\(cityName )")
+            errormsg = "Form Submitted Successfully"
+        }
         else {
             errormsg = ""
         }

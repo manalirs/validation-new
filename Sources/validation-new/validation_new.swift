@@ -27,13 +27,13 @@ public class validation_new {
             errormsg = "Enter Correct PINCODE"
             
         }
-        else if pincode.count == 6  && pincode.count != 0 {
+        // else if pincode.count == 6  && pincode.count != 0 {
      
-            _ = getloc(pincode: pincode)
-                cityName = UserDefaults.standard.string(forKey: "cityName")!
-                print("city--\(cityName )")
-            errormsg = "Form Submitted Successfully"
-        }
+        //     _ = getloc(pincode: pincode)
+        //         cityName = UserDefaults.standard.string(forKey: "cityName")!
+        //         print("city--\(cityName )")
+        //     errormsg = "Form Submitted Successfully"
+        // }
         else {
             errormsg = ""
         }

@@ -19,7 +19,7 @@ public class validation_new {
         else  if  !isValiphoneNumber(phoneNumber){
             errormsg = "Enter correct phone number"
         }
-        else  if isValidEmail(email) {
+        else  if !isValidEmail(email) {
             errormsg =  "Enter Correct Email"
 
         }

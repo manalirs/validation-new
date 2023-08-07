@@ -23,7 +23,7 @@ public class validation_new {
             errormsg =  "Enter Correct Email"
 
         }
-        else if  pincode.count != 6  && pincode.count > 0 {
+        else if  pincode.count != 6 {
             errormsg = "Enter Correct PINCODE"
             
         }

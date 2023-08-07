@@ -6,7 +6,9 @@ import CoreLocation
 import Combine
 @available(iOS 15.0, *)
 public class validation_new {
-
+           var name = ""
+  
+    let UserNameLimit = 5
       var errormsg = ""
 
     

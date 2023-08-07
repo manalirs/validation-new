@@ -5,30 +5,32 @@ import Combine
 //@available(iOS 14, macOS 11.0, *)
 public class validation_new {
     public init() {}
-    //  func Validation() -> String? {
-    //     if self.name.count == 0 {
-    //         errormsg = "Enter Correct UserName"
-    //     }
-    //     else  if  !self.isValiphoneNumber(phoneNumber) {
-    //         errormsg = "Enter correct phone number"
-    //     }
-    //     else  if  !self.isValidEmail(email) {
-    //         errormsg =  "Enter Correct Email"
+     public func Validation() -> String? {        if self.name.count == 0 {
+            errormsg = "Enter Correct UserName"
+        }
+        else  if  !isValiphoneNumber(phoneNumber){
+            errormsg = "Enter correct phone number"
+        }
+        else  if isValidEmail(email) {
+            errormsg =  "Enter Correct Email"
+
+        }
+        else if  pincode.count != 6  && self.pincode.count > 0 {
+            errormsg = "Enter Correct PINCODE"
             
-    //     }
-    //     else if  pincode.count != 6  && self.pincode.count > 0 {
-    //         errormsg = "Enter Correct PINCODE"
-            
-    //     }
-    //     else if pincode.count == 6  && pincode.count != 0 {
-    //         self.getloc()
-    //         errormsg = "Form Submitted Successfully"
-    //     }
-    //     else {
-    //         errormsg = ""
-    //     }
-    //     return errormsg
-    // }
+        }
+        else if pincode.count == 6  && pincode.count != 0 {
+     
+            _ = getloc(pincode: pincode)
+                cityName = UserDefaults.standard.string(forKey: "cityName")!
+                print("city--\(cityName )")
+            errormsg = "Form Submitted Successfully"
+        }
+        else {
+            errormsg = ""
+        }
+        return errormsg
+    }
     
       public func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"

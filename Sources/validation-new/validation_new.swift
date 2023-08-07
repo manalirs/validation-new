@@ -214,7 +214,7 @@ public class validation_new {
                     errormsg = validation_new().Validation(name:self.name,pincode:self.pincode,phoneNumber: self.phoneNumber,email:self.email)!
                     showingAlert = true
                 }
-                .alert(errormsg, isPresented: $showingAlert) {
+                .alert(errormsg, isPresented: showingAlert) {
                     Button("OK", role: .cancel) { }
                 }
                 .font(.largeTitle)

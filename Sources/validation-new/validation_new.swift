@@ -4,6 +4,7 @@ import CoreLocation
 import Combine
 //@available(iOS 14, macOS 11.0, *)
 public class validation_new {
+      @State private var errormsg = ""
     public init() {}
      public func Validation(name: String,pincode:String) -> String? {      
          let errorMessage = String()

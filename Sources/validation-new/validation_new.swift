@@ -11,7 +11,7 @@ public class validation_new {
       var streetName = ""
       var landmark = ""
       var pincode = ""
-      var name = ""
+     @State private  var name = ""
       var cityName = ""
       var errormsg = ""
     @FocusState private var isTextFieldFocused: Bool

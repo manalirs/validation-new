@@ -95,9 +95,9 @@ public class validation_new {
 
 
 }
-      
+      @available(iOS 13.0, *)
       extension View {
-  public func vv {
+  public func vv() {
   frame(width: 200, height: 30, alignment: .center))
   }
 }

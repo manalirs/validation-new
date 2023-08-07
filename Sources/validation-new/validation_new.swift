@@ -5,15 +5,15 @@ import Combine
 @available(iOS 15.0, *)
 public class validation_new {
  var showingAlert = false
-     private var email = ""
-     private var phoneNumber = ""
-     private var address = ""
-     private var streetName = ""
-     private var landmark = ""
-     private var pincode = ""
-     private var name = ""
-     private var cityName = ""
-     private var errormsg = ""
+      var email = ""
+      var phoneNumber = ""
+      var address = ""
+      var streetName = ""
+      var landmark = ""
+      var pincode = ""
+      var name = ""
+      var cityName = ""
+      var errormsg = ""
     @FocusState private var isTextFieldFocused: Bool
     let UserNameLimit = 5
     let phonenolimit = 10

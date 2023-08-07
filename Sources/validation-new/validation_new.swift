@@ -6,9 +6,7 @@ import CoreLocation
 import Combine
 @available(iOS 15.0, *)
 public class validation_new {
-           var name = ""
-  
-    let UserNameLimit = 5
+      
       var errormsg = ""
 
     
@@ -107,7 +105,7 @@ public class validation_new {
   frame(width: 200, height: 30, alignment: .center)
               .textFieldStyle(RoundedBorderTextFieldStyle()) .font(Font.system(size: 20))
                  .padding(.all)
-          .onReceive(Just(name)) { _ in let limitUserName(UserNameLimit, name: name) }
+          
         
   }
 }

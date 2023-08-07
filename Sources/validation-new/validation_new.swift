@@ -6,7 +6,7 @@ import Combine
  public class validation_new {
    
         public init() {}
-   var body: some View {
+   public var body: some View {
         ScrollView {
             VStack(spacing: 10) {
                 Text("Personal Details").font(.largeTitle).fontWeight(.medium)

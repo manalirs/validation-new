@@ -95,7 +95,7 @@ public class validation_new {
             } )
         }
   var name = ""
-
+  @FocusState private var isTextFieldFocused: Bool
 }
       @available(iOS 15.0, *)
       extension View {

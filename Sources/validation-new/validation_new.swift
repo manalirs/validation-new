@@ -108,6 +108,23 @@ public class validation_new {
          
         
   }
+            public func buttonubmit()-> some View{
+                   Button("Submit") {
+                    errormsg = validation_new().Validation(name:self.name,pincode:self.pincode,phoneNumber: self.phoneNumber,email:self.email)!
+                    showingAlert = true
+                }
+                .alert(errormsg, isPresented: $showingAlert) {
+                    Button("OK", role: .cancel) { }
+                }
+                .font(.largeTitle)
+         
+            .frame(width: 200, height: 25, alignment: .center)
+            .padding(.all)
+            .foregroundColor(.black)
+            .cornerRadius(22)
+     //       .font(.largeTitle).fontWeight(.medium)
+            .background(Color.yellow)
+            }
 }
 
 

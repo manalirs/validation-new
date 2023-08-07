@@ -6,7 +6,7 @@ import Combine
 public class validation_new {
     public init() {}
      public func Validation(name: String,pincode:String) -> String? {      
-         
+         let errorMessage = String()
                 // if let errorMessage = Validation(name: name, pincode: pincode) {
                 //     print(errorMessage)
                 //     return

@@ -104,7 +104,7 @@ public class validation_new {
       extension View {
       public func buttonubmit(name: String,pincode:String,phoneNumber:String,email:String) -> some View {
                    Button("Submit") {
-                    errormsg = validation_new.Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
+                    errormsg = validation_new().Validation(name:name,pincode:pincode,phoneNumber:phoneNumber,email:email)!
                   showingAlert = true
                 }
                 .alert(errormsg, isPresented: $showingAlert) {

@@ -67,15 +67,15 @@ public class validation_new {
 
  public  func limitUserName(name1: String)-> String {
    name = name1
-      if name1.count > 4 {
-                                    name = String(name1.prefix(4))
+      if name1.count > 16 {
+                                    name = String(name1.prefix(16))
                                 }
     return name
    }
     public  func limitPhoneNo(phoneNumber1: String)-> String {
    phoneNumber = phoneNumber1
       if phoneNumber1.count > 10 {
-                                    phoneNumber = String(phoneNumber1.prefix(4))
+                                    phoneNumber = String(phoneNumber1.prefix(10))
                                 }
     return phoneNumber
    }
@@ -83,7 +83,7 @@ public class validation_new {
    public  func limitPincode(pincode1: String)-> String {
    pincode = pincode1
       if pincode1.count > 6 {
-                                    pincode = String(pincode1.prefix(4))
+                                    pincode = String(pincode1.prefix(6))
                                 }
     return pincode
    }

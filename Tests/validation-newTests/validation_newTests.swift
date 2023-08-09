@@ -5,10 +5,7 @@ import XCTest
 final class validation_newTests: XCTestCase {
 var dd = validation_new()
    // var view1 = View()
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
+    
   func  test_validateemail_true() {
       
       let email = dd.isValidEmail("q@g.com")
@@ -70,22 +67,6 @@ var dd = validation_new()
         let phonno = dd.Validation(name: "test", pincode: "123467", phoneNumber: "1234567890", email: "test@gmail.com")
          XCTAssertEqual(phonno,"Form Submitted Successfully")
     }
-    
-    func test_getLoc() {
-       // dd.oncompletion= { result in}
-        let city = dd.getloc(pincode: "411045")
-        print(dd.getloc(pincode: "411045"))
-        //dd.getloc(pincode: "411045")
-     //   XCTAssertEqual(city, "Pune")
-     //   print(loc)
 
-    }
-    
-//    func test_textfieldui(){
-//        let UI = view1.TextfieldUI()
-//     //   xctas
-//        
-//        
-//    }
 }
 

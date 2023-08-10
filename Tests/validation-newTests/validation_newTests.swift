@@ -2,10 +2,13 @@ import XCTest
 @testable import validation_new
 
 
- class validation_newTests: XCTestCase {
+final class validation_newTests: XCTestCase {
 var dd = validation_new()
    // var view1 = View()
-    
+      override func setUp() {
+        dd = validation_new()
+    }
+
   func  test_validateemail_true() {
       
       let email = dd.isValidEmail("q@g.com")

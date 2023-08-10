@@ -2,7 +2,7 @@ import XCTest
 @testable import validation_new
 
 
-final class validation_newTests: XCTestCase {
+ class validation_newTests: XCTestCase {
 var dd = validation_new()
    // var view1 = View()
     

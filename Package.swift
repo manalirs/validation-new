@@ -24,14 +24,8 @@ let package = Package(
         .testTarget(
             name: "validation-newTests",
             dependencies: ["validation-new"]),
-    ],
-     .testTarget(
+       .testTarget(
       name: "SwiftUIProjectNewUITests",
       dependencies: [],
-      resources: [
-        // Copy Tests/ExampleTests/Resources directories as-is. 
-        // Use to retain directory structure.
-        // Will be at top level in bundle.
-        .copy("Resources"),
-      ])
-)
+    )
+)]

@@ -30,7 +30,7 @@ public class validation_new {
         }
         else if pincode.count == 6  && pincode.count != 0 {
             getloc(pincode: pincode)
-            let cityName = UserDefaults.standard.string(forKey: "cityName")!
+         let cityName = UserDefaults.standard.string(forKey: "cityName") ??  "Pune1"
             print("city--\(cityName )")
             errormsg = "Form Submitted Successfully"
         }

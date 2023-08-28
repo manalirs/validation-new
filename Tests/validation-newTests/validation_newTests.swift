@@ -1,38 +1,15 @@
 
+
+import XCTest
+@testable import validation_new
+
 final class validation_newTests: XCTestCase {
     var calculator: validation_new!
 
     override func setUp() {
         calculator = validation_new()
     }
-
-    func test_should_return_nice_when_multiplying_three_with_three() {
-      
-        let valueX = 3
-        let valueY = 3
-
-        let result = 9
-
-        XCTAssertEqual(result, 9)
-    }
-
-    static var allTests = [
-        ("test_should_return_nice_when_multiplying_three_with_three", test_should_return_nice_when_multiplying_three_with_three),
-    ]
 }
-
-
-
-// import XCTest
-// @testable import validation_new
-
-// final class validation_newTests: XCTestCase {
-//     var calculator: validation_new!
-
-//     override func setUp() {
-//         calculator = validation_new()
-//     }
-// }
 // final class validation_newTests: XCTestCase {
 // var dd = validation_new()
 //    // var view1 = View()

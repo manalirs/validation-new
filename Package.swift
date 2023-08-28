@@ -24,8 +24,6 @@ let package = Package(
         .testTarget(
             name: "validation-newTests",
             dependencies: ["validation-new"]),
-       .testTarget(
-      name: "SwiftUIProjectNewUITests",
-      dependencies: [],
-    )
-)]
+  
+]
+)

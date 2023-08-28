@@ -7,6 +7,7 @@ final class validation_newTests: XCTestCase {
     override func setUp() {
         calculator = validation_new()
     }
+}
 // final class validation_newTests: XCTestCase {
 // var dd = validation_new()
 //    // var view1 = View()

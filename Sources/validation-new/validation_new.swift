@@ -9,12 +9,7 @@ public class validation_new {
     var pincode = String()
     var errormsg = ""
     public init() {}
-    public struct DummyPackage {
-    public private(set) var text = "Hello, World!"
 
-    public init() {
-    }
-}
     public func Validation(name: String,pincode:String,phoneNumber:String,email:String) -> String? {
         if name.count == 0 {
             errormsg = "Enter Correct UserName"
